@@ -1,7 +1,7 @@
 // Go support for Protocol Buffers - Google's data interchange format
 //
 // Copyright 2015 The Go Authors.  All rights reserved.
-// https://github.com/golang/protobuf
+// https://github.com/sunnogo/protobuf
 //
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions are
@@ -40,8 +40,8 @@ import (
 	"strconv"
 	"strings"
 
-	pb "github.com/golang/protobuf/protoc-gen-go/descriptor"
-	"github.com/golang/protobuf/protoc-gen-go/generator"
+	pb "github.com/sunnogo/protobuf/protoc-gen-go/descriptor"
+	"github.com/sunnogo/protobuf/protoc-gen-go/generator"
 )
 
 // generatedCodeVersion indicates a version of the generated code.
@@ -53,8 +53,8 @@ const generatedCodeVersion = 4
 // Paths for packages used by code generated in this file,
 // relative to the import_prefix of the generator.Generator.
 const (
-	contextPkgPath = "golang.org/x/net/context"
-	grpcPkgPath    = "google.golang.org/grpc"
+	contextPkgPath = "github.com/sunnogo/net/context"
+	grpcPkgPath    = "github.com/sunnogo/grpc-go"
 )
 
 func init() {
@@ -162,7 +162,7 @@ func (g *grpc) generateService(file *generator.FileDescriptor, service *pb.Servi
 	g.P()
 	g.P(fmt.Sprintf(`// %sClient is the client API for %s service.
 //
-// For semantics around ctx use and closing/ending streaming RPCs, please refer to https://godoc.org/google.golang.org/grpc#ClientConn.NewStream.`, servName, servName))
+// For semantics around ctx use and closing/ending streaming RPCs, please refer to https://godoc.org/github.com/sunnogo/grpc-go#ClientConn.NewStream.`, servName, servName))
 
 	// Client interface.
 	if deprecated {

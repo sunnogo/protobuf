@@ -3,14 +3,14 @@
 
 package conformance
 
-import proto "github.com/golang/protobuf/proto"
+import proto "github.com/sunnogo/protobuf/proto"
 import fmt "fmt"
 import math "math"
-import any "github.com/golang/protobuf/ptypes/any"
-import duration "github.com/golang/protobuf/ptypes/duration"
-import _struct "github.com/golang/protobuf/ptypes/struct"
-import timestamp "github.com/golang/protobuf/ptypes/timestamp"
-import wrappers "github.com/golang/protobuf/ptypes/wrappers"
+import any "github.com/sunnogo/protobuf/ptypes/any"
+import duration "github.com/sunnogo/protobuf/ptypes/duration"
+import _struct "github.com/sunnogo/protobuf/ptypes/struct"
+import timestamp "github.com/sunnogo/protobuf/ptypes/timestamp"
+import wrappers "github.com/sunnogo/protobuf/ptypes/wrappers"
 import field_mask "google.golang.org/genproto/protobuf/field_mask"
 
 // Reference imports to suppress errors if they are not otherwise used.
