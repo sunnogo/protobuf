@@ -93,7 +93,7 @@ func RegisterPlugin(p Plugin) {
 	plugins = append(plugins, p)
 }
 
-// A GoImportPath is the import path of a Go package. e.g., "google.golang.org/genproto/protobuf".
+// A GoImportPath is the import path of a Go package. e.g., "github.com/sunnogo/go-genproto/protobuf".
 type GoImportPath string
 
 func (p GoImportPath) String() string { return strconv.Quote(string(p)) }

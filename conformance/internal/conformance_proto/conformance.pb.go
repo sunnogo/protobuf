@@ -11,7 +11,7 @@ import duration "github.com/sunnogo/protobuf/ptypes/duration"
 import _struct "github.com/sunnogo/protobuf/ptypes/struct"
 import timestamp "github.com/sunnogo/protobuf/ptypes/timestamp"
 import wrappers "github.com/sunnogo/protobuf/ptypes/wrappers"
-import field_mask "google.golang.org/genproto/protobuf/field_mask"
+import field_mask "github.com/sunnogo/go-genproto/protobuf/field_mask"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
